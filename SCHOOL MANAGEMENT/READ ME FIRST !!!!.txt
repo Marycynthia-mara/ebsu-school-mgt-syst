@@ -1,0 +1,26 @@
+
+
+                   ADMIN username = admin
+                         password = admin
+
+                  A STUDENTS reg-no = 2345-2019/2020
+                         password = mara    
+
+                 A TEACHERS username = dorischinenye
+                         password = mara       
+
+
+DON'T FORGET TO CREATE A DATABASE NAMED school_mgt_syst  AND IMPORT THE SQL FILE AND RUN.
+WITHOUT THE DATABASE THE PROJECT WON'T RUN.
+
+***** IF YOU FIND ANY ERRORS OR ANY PROBLEMS RELATED THIS PROGRAM, FEEL FREE TO CONTACT US *****  
+
+
+***** LEAVE A COMMENT IF YOU LOVED OUR WORK *****
+
+
+***** FOR MORE PROJECTS :- https://school-upgraders.org/ *****
+
+
+
+#THANK YOU FOR READING

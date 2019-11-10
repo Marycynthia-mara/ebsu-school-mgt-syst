@@ -1,0 +1,109 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	width: 100%;
+	min-height: 100px;
+	margin: 0 auto;
+}
+
+.container{
+	width: 80%;	padding: 20px;	background-color: #ebebe4;	margin: 0 auto;
+}
+
+
+
+
+
+.container header{
+	width: 100%; margin: 0 auto; text-align: center;
+}
+
+.container header h1{
+	margin-top: -20px;
+}
+
+.container header h4{
+	text-decoration: underline;
+}
+
+.container header h4 input{
+	text-decoration: inherit; font-size: inherit; color: inherit; font-weight: inherit;
+}
+
+
+
+
+.container table{
+	margin: 0 auto;	margin-bottom: 20px;	width: 100%;	border: 1px solid #000;	border-collapse: collapse;
+}
+
+.container table caption{
+	background-color: maroon;	color: #ebebe4;	padding: 5px 10px;
+}
+
+.container table tr th, td{
+	height: 2em;	border: 1px solid #000;	text-align: center;	font-size: 14px;
+}
+
+.container input{
+	width: 100%;	height: 100%;	margin: 0;	text-align: center;	border: none;
+}
+
+.container .rotate{
+	width: 3em;	-o-transform: rotate(90deg);	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);	-ms-transform: rotate(90deg);	transform: rotate(90deg);	height: 5em;
+}
+
+.container button{
+	width: 100%;	cursor: pointer;	height: 100%;
+}
+
+
+
+
+
+
+.container .mainResult .serialNum{
+	width: 30PX; text-align: center;
+}
+
+.container .mainResult .subjectName{
+	width: 400px;
+}
+
+.container .mainResult .subjectTeacherComment{
+	width: 400px;
+}
+
+
+
+
+
+.container .justified{
+	padding-left: 10px;	text-align: justify;
+}
+
+.container .numberInput{
+	width: 5em;
+}
+
+.container .textInput{
+	width: 8em;
+}
+
+
+
+
+
+.container .submitBtn{
+	width: 20%;	margin: 0 auto;	height: 70px;	text-align: center;	
+	background-color: #fff;	border: 1px solid #212223;	border-radius: 10px;	color: maroon;
+	font-weight: bold;	transition: 1s;	text-transform: uppercase;	font-size: 1.5em;
+}
+
+
+.container .submitBtn:hover{
+	background-color: maroon;	cursor: pointer;	color: #eee;
+}

@@ -1,0 +1,166 @@
+.special_action_confirm h1.ebsu
+{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 30px;
+	color: #1B84E7;
+	font-size: 20px;
+	font-family: 'Source Sans Pro', cursive;
+	letter-spacing: 1px;
+}
+
+
+.special_action_confirm h3{
+	margin: 0;
+	padding: 0;
+	margin-right: 400px;
+	text-align: center;
+	margin-bottom: 25px;
+	font-family: 'Source Sans Pro', cursive;
+	letter-spacing: 1px;
+}
+
+.special_action_confirm p {
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	letter-spacing: 1px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+
+.special_action_confirm .art-right-w3ls h2 {
+	font-weight: 500;
+	color: #ffffff;
+}
+
+.special_action_confirm button, input.popUp {
+	background: #00a1ff;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 10px;
+	border: 1px solid #fff;
+	font-weight: 400;
+	padding: 11px 20px;
+	letter-spacing: 1px;
+	text-transform: capitalize;
+	cursor: pointer;
+	transition: 1s all;
+	margin: 35px 0px 0px;
+	-webkit-transition: 1s all;
+	-o-transition: 1s all;
+	-moz-transition: 1s all;
+	-ms-transition: 1s all;
+}
+
+.special_action_confirm button, input[type="submit"]:hover {
+	opacity: 0.8;
+}
+
+.special_action_confirm a{
+	font-size: 14px;
+	color: red;
+	letter-spacing: 1px;
+	text-transform: capitalize;
+}
+
+.special_action_confirm .popup-effect {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(000, 000, 000, 0.3);
+	transition: opacity 0ms;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 99;
+}
+
+.special_action_confirm .popup-effect:target {
+	visibility: visible;
+	transition-duration: 2s;
+	opacity: 1;
+}
+
+.special_action_confirm .popup {
+	background: #fff;
+	border-radius: 4px;
+	width: 60%;
+	border: 1px solid rgba(25, 181, 254, 0.7);
+	border-radius: 15px;
+	position: relative;
+	margin: 20em auto;
+	padding: 2em 2em;
+	z-index: 999;
+	text-align: center;
+}
+
+
+.special_action_confirm .popup .close {
+	position: absolute;
+	top: 5px;
+	right: 15px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #fff;
+}
+
+.special_action_confirm .popup .close:hover {
+	color: #686de0;
+}
+
+@media(max-width:1366px) {
+
+	.special_action_confirm .popup {
+		margin: 8em auto;
+	}
+}
+
+
+@media(max-width:1024px) {
+
+	.special_action_confirm .popup {
+		margin: 3em auto;
+	}
+
+}
+
+
+@media(max-width:480px) {
+
+	.special_action_confirm .popup {
+		max-width: 350px;
+	}
+
+}
+
+
+@media(max-width:414px) {
+
+	.special_action_confirm .popup {
+		max-width: 296px;
+	}
+}
+
+@media(max-width:384px) {
+
+	.special_action_confirm .popup {
+		max-width: 267px;
+	}
+}
+
+
+
+@media(max-width:320px) {
+
+	.special_action_confirm .popup {
+		max-width: 239px;
+		padding: 3em 1.5em;
+	}
+}

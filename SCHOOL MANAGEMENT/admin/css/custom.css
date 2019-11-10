@@ -1,0 +1,87 @@
+.row{
+	margin-bottom: 10px;
+}
+
+.error{
+	border: 1px solid red;
+}
+/*.section-wrapper.mg-t-20 .col-md-4, 
+.col-md-8 
+{
+	border: 1px solid #CED4DA;
+}*/
+
+.stud_column{
+	border: 1px solid #CED4DA;
+}
+.stud_column-1{
+	width: 20%; 
+	float: left;
+}
+.stud_column-2{
+	width: 80%; 
+	float: right;
+}
+.col-5.col-sm-4.stud_column,
+.col-7.col-sm-8.stud_column{
+	border-top: 1px solid #CED4DA; 
+	padding: 5px 5px 5px 20px;
+	background-color: rgb(233, 236, 239);
+}
+.row.no-gutters.studs{
+margin-bottom: 3px;
+}
+.button{
+	float: right;
+	cursor: pointer;
+	border: none;
+	background-color: rgb(20, 106, 187);
+	padding: 3px 10px;
+	margin: 0 5px;
+	color: #eee;
+	transition: all .5s;
+}
+.button:hover{
+	color: #1570C7;
+	background-color: #ddd;
+}
+.status-one,.status-two{
+	display: inline-block;
+	width: 40%;
+}
+.status-one label,
+.status-two label,
+.status-one input,
+.status-two input{
+	display: inline-block;
+}
+.status-one input,
+.status-two input{
+	width: 20%;
+}
+.status-one label,
+.status-two label{
+	width: 70%;
+}
+ .status-two{
+	float: right;
+	width: 40%;
+}
+ .one, .two{
+	float: left;
+	width: 25%;
+}
+#tbody1 tr:hover,
+#tbody2 tr:hover,
+#tbody3 tr:hover,
+#tbody4 tr:hover,
+#tbody5 tr:hover,
+#tbody6 tr:hover,
+#tbody7 tr:hover,
+#tbody8 tr:hover,
+#tbody9 tr:hover,
+#tbody10 tr:hover,
+#tbody11 tr:hover,
+#tbody12 tr:hover{
+	background-color: rgb(210, 210, 210);
+}

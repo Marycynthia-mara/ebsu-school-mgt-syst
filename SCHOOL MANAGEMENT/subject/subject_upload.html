@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Result Sheet</title>
+	<link rel="stylesheet" type="text/css" href="result.css">
+</head>
+<body>
+<div class="container">
+<form>
+
+
+
+	<header>
+		<img src="logo_name2.png" alt="School Logo">
+		<h2>EBONYI STATE UNIVERSITY, ABAKALIKI</h2>
+		<h1>STAFF SECONDARY SCHOOL</h1>
+		<h4>CONTINEUOUS ASSESSMENT FOR <input type="text" class="textInput" value="SECOND TERM" disabled="" name=""></h4>
+	</header>
+
+
+
+
+	<div class="mainResult">
+		<table>
+			<caption>COGNITIVE DOMAIN</caption>
+			<tr>
+				<th rowspan="2" class="serialNum">S/N</th>
+				<th rowspan="2" class="subjectName">SUBJECT</th>
+				<th class="rotate">CAT 1</th>
+				<th class="rotate">CAT 2</th>
+				<th class="rotate">CAT 3</th>
+				<th class="rotate">EXAM</th>
+				<th class="rotate">TOTAL</th>
+				<th class="rotate" rowspan="2">GRADE</th>
+				<th class="rotate" rowspan="2">EDIT</th>
+				<th rowspan="2" class="subjectTeacherComment">SUBJECT TEACHER'S COMMENT</th>
+			</tr>
+
+			<tr>
+				<td><input type="number" name="" value="10" disabled></td>
+				<td><input type="number" name="" value="10" disabled></td>
+				<td><input type="number" name="" value="10" disabled></td>
+				<td><input type="number" name="" value="70" disabled></td>
+				<td><input type="number" name="" value="100" disabled></td>
+			</tr>
+
+
+
+
+			<tr class="Accounting">
+				<td class="justified">1</td>
+				<td class="justified">Accounting</td>
+				<td class="numberInput"><input type="number" name="" required  class="sub1" onblur="calcTotal(this, 'total1', 'grade1')"></td>
+				<td class="numberInput"><input type="number" name="" required  class="sub1" onblur="calcTotal(this, 'total1', 'grade1')"></td>
+				<td class="numberInput"><input type="number" name="" required  class="sub1" onblur="calcTotal(this, 'total1', 'grade1')"></td>
+				<td class="numberInput"><input type="number" name="" required  class="sub1" onblur="calcTotal(this, 'total1', 'grade1')"></td>
+				<td class="totalScore"><input type="number" name="" disabled class="totalScore" id="total1"></td>
+				<td><input type="text" name="" disabled value="F" id="grade1"></td>
+				<td><button onclick="activateBtn(event, 'sub1', 'total1')">EDIT</button></td>
+				<td><input class="justified" type="text" required name=""></td>
+			</tr>
+
+			<tr class="Biology">
+				<td class="justified">2</td>
+				<td class="justified">Biology</td>
+				<td class="numberInput"><input type="number" name="" required  class="sub2" onblur="calcTotal(this, 'total2', 'grade2')"></td>
+				<td class="numberInput"><input type="number" name="" required  class="sub2" onblur="calcTotal(this, 'total2', 'grade2')"></td>
+				<td class="numberInput"><input type="number" name="" required  class="sub2" onblur="calcTotal(this, 'total2', 'grade2')"></td>
+				<td class="numberInput"><input type="number" name="" required  class="sub2" onblur="calcTotal(this, 'total2', 'grade2')"></td>
+				<td class="totalScore"><input type="number" name="" disabled class="totalScore" id="total2"></td>
+				<td><input type="text" name="" disabled value="F" id="grade2"></td>
+				<td><button onclick="activateBtn(event, 'sub2', 'total2')">EDIT</button></td>
+				<td><input class="justified" type="text" required name=""></td>
+			</tr>
+		</table>
+
+
+
+		<table>
+			<tr>
+				<td class="justified">GRADING SCALE</td>
+				<td class="justified">80-100 = A (Excellent)</td>
+				<td class="justified">70-79 = B (Very Good)</td>
+				<td class="justified">60-69 = C (Good)</td>
+				<td class="justified">50-59 = D (Credit)</td>
+				<td class="justified">40-49 = E (Fair)</td>
+				<td class="justified">0-39 = F (Fail)</td>
+				</tr>
+		</table>
+	</div>
+
+
+
+
+
+	<input class="submitBtn" type="submit" name="" value="Upload Scores">
+
+
+</form>
+</div>
+</body>
+
+
+
+<script type="text/javascript">
+
+	function calcTotal(inputElement, totalField, grades){
+
+		// let increment = 0;
+		// let tot = "total";
+		// for (var i = 0; i < 10; i++) {
+		// 	increment++;
+		// 	tot = "total";
+		// 	tot += increment;
+		// 	alert(tot);
+		// }
+
+
+		let total = document.getElementById(totalField);
+		let score = parseInt(inputElement.value);
+		let grading = document.getElementById(grades);
+		let totalScore = total.value;
+
+
+		if (isNaN(score)){
+			score = 0;
+			totalScore = parseInt(totalScore);
+			total.value = eval(totalScore + score);
+		}
+
+		if (totalScore == "" || isNaN(totalScore)){
+			totalScore = 0;
+			totalScore = parseInt(totalScore);
+			score = parseInt(score);
+			total.value = eval(score + totalScore);
+
+		}else{
+			total.value = "";
+			totalScore = parseInt(totalScore);
+			score = parseInt(score);
+			total.value = eval(totalScore + score);
+		}
+
+
+		if (total.value > 100) {
+				alert("sorry, the total score of a student cannot be greater than 100 Please review");
+		}
+
+
+
+		if (total.value >= 80){
+			grading.value = 'A';
+		}else if (total.value >= 70){
+			grading.value = 'B';
+		}else if (total.value >= 60){
+			grading.value = 'C';
+		}else if (total.value >= 50){
+			grading.value = 'D';
+		}else if (total.value >= 40){
+			grading.value = 'E';
+		}else if (total.value >= 0){
+			grading.value = 'F';
+		}else{
+			grading.value = '-';
+		}
+
+		inputElement.disabled = true;
+
+	}
+	
+
+
+	function activateBtn(e, subInput, totals){
+		e.preventDefault();
+		let enable = document.getElementsByClassName(subInput);
+		let clearer = document.getElementById(totals);
+
+		for (var i = 0; i < enable.length; i++){
+			enable[i].disabled = false;
+			enable[i].value = "";
+			
+		}
+		clearer.value = "";
+	}
+
+
+
+
+
+
+</script>

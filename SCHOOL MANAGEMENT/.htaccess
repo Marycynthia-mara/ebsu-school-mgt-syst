@@ -1,0 +1,3 @@
+RewriteEngine on
+
+RewriteRule ^(index|contact|about|signin|404|join|events|app|change_password|email_template|email_template2|email_template3|email_template4|error_page|mail-function.inc|mail-function.inc2|password|signup|testfile|verify._account|dashboard)$ $1.php [NC,L]

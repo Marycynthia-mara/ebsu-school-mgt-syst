@@ -1,0 +1,113 @@
+.txtLogo{
+	color: #eee;
+	border: none;
+	outline: none;
+	text-align: center;
+}
+
+.txtLogo:hover{
+	color: #aaa;
+}
+
+.imgLogo{	
+	position: absolute;
+	margin-top: -20px;
+}
+
+.login-m_page .login-form-wthree-agile form .input-group.mb-3.mul-input, 
+.input-group.mul-input2, 
+.input-group.mul-input3,
+.form-check{
+	display: block;
+	border: 1px solid #aaa;
+	height: 40px;
+	margin-bottom:  10px;
+}
+
+.input-group.mul-input2 input,
+.input-group.mul-input3 input,
+.form-check .gender{
+	width: 33%;
+	float: left;
+	margin: 0;
+	border: 0;
+}
+
+.form-check .gender{
+	height: 38px;
+	padding: 10px 0;
+}
+.form-check .gender:nth-child(1){
+	background-color: #eee;
+}
+
+.form-check .gender:nth-child(2){
+	border-right: 1px solid #aaa;
+}
+.form-check .gender label:not(.one){
+	color: #aaa;
+}
+.input-group.mul-input3 input{
+	width: 50%;
+}
+
+.input-group.mul-input2 input:nth-child(2){
+	border-left: 1px solid #aaa;
+	border-right: 1px solid #aaa;
+}
+.input-group.mul-input3 input:nth-child(1){
+	border-right: 1px solid #aaa;
+}
+.login-m_page .login-form-wthree-agile form .input-group.mb-3.mul-input .input-group-prepend{
+	float: left;
+	width: 45%;	
+	background-color: #eee;
+	padding: 8px 5px;
+}
+
+.login-m_page .login-form-wthree-agile form .input-group.mb-3.mul-input select,
+.input-group.mb-3.mul-input input.birth{
+	float: right;
+	width: 55%;
+	border: none;
+	padding: 8px;
+	outline: none;
+	cursor: pointer;	
+}
+.input-group.mb-3.mul-input input.birth{
+	padding: 0 0 0 10px;
+}
+.input-group.mul-input3 input.tel, .teachers_tel{
+	text-align: center;
+	height: 38px;
+	outline: none;
+}
+.staff_tel{
+	width: 100%;
+	margin-bottom: 10px;
+	outline: none;
+}
+
+.imported_form{
+	 width: 100%; 
+	 min-height: 40px
+}
+
+
+
+.login-m_page .login-form-wthree-agile form .input-group.mb-3.mul-input .error, 
+.input-group.mul-input2 .error, 
+.input-group.mul-input3 .error,
+.form-check .error,
+.login-m_page .login-form-wthree-agile .imported_form_student form input.error,
+.login-m_page .login-form-wthree-agile form input.error,
+.login-m_page .login-form-wthree-agile .imported_form_staff form input.error,
+.login-m_page .login-form-wthree-agile  form .form-check .gender.error,
+.login-m_page .login-form-wthree-agile  form input.staff_tel.error,
+
+.error{
+	/*border: 1px solid red;*/
+	background-color: #F3C4C0;
+}
+
+

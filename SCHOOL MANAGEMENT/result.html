@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Result Sheet</title>
+	<link rel="stylesheet" type="text/css" href="result.css">
+</head>
+<body>
+<div class="container">
+<form>
+
+
+
+	<header>
+		<img src="images/logo_name2.png" alt="School Logo">
+		<h2>EBONYI STATE UNIVERSITY, ABAKALIKI</h2>
+		<h1>STAFF SECONDARY SCHOOL</h1>
+		<h4>CONTINEUOUS ASSESSMENT FOR <input type="text" class="textInput" value="SECOND TERM" disabled="" name=""></h4>
+
+
+		<table>
+			<tr>
+				<td>Student Name : </td>
+				<td><input type="text" name=""></td>
+				<td>Class : </td>
+				<td><input type="text" name=""></td>
+				<td>Year : </td>
+				<td><input type="date" name=""></td>
+			</tr>
+		</table>
+	</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="topResult">
+
+		<table class="attendance">
+			<caption>ATTENDANCE RECORD</caption>
+				<tr>
+					<td class="justified">No. of times School Opened</td>
+					<td class="numberInput"><input type="number" name=""></td>
+				</tr>
+				<tr>
+					<td class="justified">No. of times Present</td>
+					<td class="numberInput"><input type="number" name=""></td>
+				</tr>
+				<tr>
+					<td class="justified">No. of times Absent</td>
+					<td class="numberInput"><input type="number" name=""></td>
+				</tr>
+		</table>
+
+		<table class="attendance term">
+			<caption>TERM INFORMATION</caption>
+				<tr>
+					<td class="justified">Admission No.</td>
+					<td class="textInput"><input type="text" name=""></td>
+				</tr>
+				<tr>
+					<td class="justified">Term Ended</td>
+					<td class="textInput"><input type="date" name=""></td>
+				</tr>
+				<tr>
+					<td class="justified">Next Term Begins</td>
+					<td class="textInput"><input type="date" name=""></td>
+				</tr>
+		</table>
+
+
+	</div>
+
+
+
+
+
+
+
+<div class="mainResult">
+<table>
+<caption>COGNITIVE DOMAIN</caption>
+	<tr>
+		<th rowspan="2" style="width: 300PX;">SUBJECT</th>
+		<th class="rotate">CAT 1</th>
+		<th class="rotate">CAT 2</th>
+		<th class="rotate">CAT 3</th>
+		<th class="rotate">EXAM</th>
+		<th class="rotate">TOTAL</th>
+		<th class="rotate" rowspan="2">GRADE</th>
+		<th rowspan="2" style="width: 400PX;">SUBJECT TEACHER'S COMMENT</th>
+	</tr>
+	<tr>
+		<td>10</td>
+		<td>10</td>
+		<td>10</td>
+		<td>70</td>
+		<td>100</td>
+	</tr>
+
+
+
+
+	<tr class="Accounting">
+		<td class="justified">Accounting</td>
+		<td class="numberInput"><input type="number" name="" max="10"  class="sub1" onblur="calcTotal(this, 'total1', 'grade1')"></td>
+		<td class="numberInput"><input type="number" name="" max="10"  class="sub1" onblur="calcTotal(this, 'total1', 'grade1')"></td>
+		<td class="numberInput"><input type="number" name="" max="10"  class="sub1" onblur="calcTotal(this, 'total1', 'grade1')"></td>
+		<td class="numberInput"><input type="number" name="" max="70"  class="sub1" onblur="calcTotal(this, 'total1', 'grade1')"></td>
+		<td class="totalScore"><input type="text" name="" disabled class="totalScore" id="total1"></td>
+		<td><input type="text" name="" disabled value="F" id="grade1"></td>
+		<td><input class="justified" type="text" name=""></td>
+	</tr>
+
+	<tr class="Biology">
+		<td class="justified">Biology</td>
+		<td class="numberInput"><input type="number" name="" max="10"  class="sub2" onblur="calcTotal('sub2', 'total2', 'grade2')"></td>
+		<td class="numberInput"><input type="number" name="" max="10"  class="sub2" onblur="calcTotal('sub2', 'total2', 'grade2')"></td>
+		<td class="numberInput"><input type="number" name="" max="10"  class="sub2" onblur="calcTotal('sub2', 'total2', 'grade2')"></td>
+		<td class="numberInput"><input type="number" name="" max="70"  class="sub2" onblur="calcTotal('sub2', 'total2', 'grade2')"></td>
+		<td class="totalScore"><input type="number" name="" disabled class="totalScore" id="total2"></td>
+		<td><input type="text" name="" disabled value="F" id="grade2"></td>
+		<td><input class="justified" type="text" name=""></td>
+	</tr>
+	<tr>
+		<td class="justified" class="Chemistry">Chemistry</td>
+		<td class="numberInput"><input type="number" name="" max="10"  class="sub3" onblur="calcTotal('sub3', 'total3', 'grade3')"></td>
+		<td class="numberInput"><input type="number" name="" max="10"  class="sub3" onblur="calcTotal('sub3', 'total3', 'grade3')"></td>
+		<td class="numberInput"><input type="number" name="" max="10"  class="sub3" onblur="calcTotal('sub3', 'total3', 'grade3')"></td>
+		<td class="numberInput"><input type="number" name="" max="70"  class="sub3" onblur="calcTotal('sub3', 'total3', 'grade3')"></td>
+		<td class="totalScore"><input type="number" name="" disabled class="totalScore" id="total3"></td>
+		<td><input type="text" name="" disabled value="F" id="grade3"></td>
+		<td><input class="justified" type="text" name=""></td>
+	</tr>
+	<tr>
+		<td class="justified">Civic Education</td>
+		<td class="numberInput"><input type="number" name="" max="10"  class="sub4" onblur="calcTotal('sub4', 'total4', 'grade4')"></td>
+		<td class="numberInput"><input type="number" name="" max="10"  class="sub4" onblur="calcTotal('sub4', 'total4', 'grade4')"></td>
+		<td class="numberInput"><input type="number" name="" max="10"  class="sub4" onblur="calcTotal('sub4', 'total4', 'grade4')"></td>
+		<td class="numberInput"><input type="number" name="" max="70"  class="sub4" onblur="calcTotal('sub4', 'total4', 'grade4')"></td>
+		<td class="totalScore"><input type="number" name="" disabled class="totalScore" id="total4"></td>
+		<td><input type="text" name="" disabled value="F" id="grade4"></td>
+		<td><input class="justified" type="text" name=""></td>
+	</tr>
+	<tr>
+		<td class="justified">Economics</td>
+		<td class="numberInput"><input type="number" name="" max="10"  class="sub5" onblur="calcTotal('sub5', 'total5', 'grade5')"></td>
+		<td class="numberInput"><input type="number" name="" max="10"  class="sub5" onblur="calcTotal('sub5', 'total5', 'grade5')"></td>
+		<td class="numberInput"><input type="number" name="" max="10"  class="sub5" onblur="calcTotal('sub5', 'total5', 'grade5')"></td>
+		<td class="numberInput"><input type="number" name="" max="70"  class="sub5" onblur="calcTotal('sub5', 'total5', 'grade5')"></td>
+		<td class="totalScore"><input type="number" name="" disabled class="totalScore" id="total5"></td>
+		<td><input type="text" name="" disabled value="F" id="grade5"></td>
+		<td><input class="justified" type="text" name=""></td>
+	</tr>
+	<tr>
+		<td class="justified">English Language</td>
+		<td class="numberInput"><input type="number" name="" max="10"  class="sub6" onblur="calcTotal('sub6', 'total6', 'grade6')"></td>
+		<td class="numberInput"><input type="number" name="" max="10"  class="sub6" onblur="calcTotal('sub6', 'total6', 'grade6')"></td>
+		<td class="numberInput"><input type="number" name="" max="10"  class="sub6" onblur="calcTotal('sub6', 'total6', 'grade6')"></td>
+		<td class="numberInput"><input type="number" name="" max="70"  class="sub6" onblur="calcTotal('sub6', 'total6', 'grade6')"></td>
+		<td class="totalScore"><input type="number" name="" disabled class="totalScore" id="total6"></td>
+		<td><input type="text" name="" disabled value="F" id="grade6"></td>
+		<td><input class="justified" type="text" name=""></td>
+	</tr>
+	<tr>
+		<td class="justified">Geography</td>
+		<td class="numberInput"><input type="number" name="" max="10"  class="sub7" onblur="calcTotal('sub7', 'total7', 'grade7')"></td>
+		<td class="numberInput"><input type="number" name="" max="10"  class="sub7" onblur="calcTotal('sub7', 'total7', 'grade7')"></td>
+		<td class="numberInput"><input type="number" name="" max="10"  class="sub7" onblur="calcTotal('sub7', 'total7', 'grade7')"></td>
+		<td class="numberInput"><input type="number" name="" max="70"  class="sub7" onblur="calcTotal('sub7', 'total7', 'grade7')"></td>
+		<td class="totalScore"><input type="number" name="" disabled class="totalScore" id="total7"></td>
+		<td><input type="text" name="" disabled value="F" id="grade7"></td>
+		<td><input class="justified" type="text" name=""></td>
+	</tr>
+	<tr>
+		<td class="justified">Government</td>
+		<td class="numberInput"><input type="number" name="" max="10"  class="sub8" onblur="calcTotal('sub8', 'total8', 'grade8')"></td>
+		<td class="numberInput"><input type="number" name="" max="10"  class="sub8" onblur="calcTotal('sub8', 'total8', 'grade8')"></td>
+		<td class="numberInput"><input type="number" name="" max="10"  class="sub8" onblur="calcTotal('sub8', 'total8', 'grade8')"></td>
+		<td class="numberInput"><input type="number" name="" max="70"  class="sub8" onblur="calcTotal('sub8', 'total8', 'grade8')"></td>
+		<td class="totalScore"><input type="number" name="" disabled class="totalScore" id="total8"></td>
+		<td><input type="text" name="" disabled value="F" id="grade8"></td>
+		<td><input class="justified" type="text" name=""></td>
+	</tr>
+	<tr>
+		<td class="justified">Literature in English</td>
+		<td class="numberInput"><input type="number" name="" max="10"  class="sub9" onblur="calcTotal('sub9', 'total9', 'grade9')"></td>
+		<td class="numberInput"><input type="number" name="" max="10"  class="sub9" onblur="calcTotal('sub9', 'total9', 'grade9')"></td>
+		<td class="numberInput"><input type="number" name="" max="10"  class="sub9" onblur="calcTotal('sub9', 'total9', 'grade9')"></td>
+		<td class="numberInput"><input type="number" name="" max="70"  class="sub9" onblur="calcTotal('sub9', 'total9', 'grade9')"></td>
+		<td class="totalScore"><input type="number" name="" disabled class="totalScore" id="total9"></td>
+		<td><input type="text" name="" disabled value="F" id="grade9"></td>
+		<td><input class="justified" type="text" name=""></td>
+	</tr>
+	<tr>
+		<td class="justified">Mathematics</td>
+		<td class="numberInput"><input type="number" name="" max="10" class="sub10" onblur="calcTotal('sub10', 'total10', 'grade10')"></td>
+		<td class="numberInput"><input type="number" name="" max="10" class="sub10" onblur="calcTotal('sub10', 'total10', 'grade10')"></td>
+		<td class="numberInput"><input type="number" name="" max="10" class="sub10" onblur="calcTotal('sub10', 'total10', 'grade10')"></td>
+		<td class="numberInput"><input type="number" name="" max="70" class="sub10" onblur="calcTotal('sub10', 'total10', 'grade10')"></td>
+		<td class="totalScore"><input type="number" name="" disabled class="totalScore" id="total10"></td>
+		<td><input type="text" name="" disabled value="F" id="grade10"></td>
+		<td><input class="justified" type="text" name=""></td>
+	</tr>
+	<tr>
+		<td class="justified">Physics</td>
+		<td class="numberInput"><input type="number" name="" max="10" class="sub11" onblur="calcTotal('sub11', 'total11', 'grade11')"></td>
+		<td class="numberInput"><input type="number" name="" max="10" class="sub11" onblur="calcTotal('sub11', 'total11', 'grade11')"></td>
+		<td class="numberInput"><input type="number" name="" max="10" class="sub11" onblur="calcTotal('sub11', 'total11', 'grade11')"></td>
+		<td class="numberInput"><input type="number" name="" max="70" class="sub11" onblur="calcTotal('sub11', 'total11', 'grade11')"></td>
+		<td class="totalScore"><input type="number" name="" disabled class="totalScore" id="total11"></td>
+		<td><input type="text" name="" disabled value="F" id="grade11"></td>
+		<td><input class="justified" type="text" name=""></td>
+	</tr>
+	<tr>
+		<td class="justified">Commerce</td>
+		<td class="numberInput"><input type="number" name="" max="10" class="sub12" onblur="calcTotal('sub12', 'total12', 'grade12')"></td>
+		<td class="numberInput"><input type="number" name="" max="10" class="sub12" onblur="calcTotal('sub12', 'total12', 'grade12')"></td>
+		<td class="numberInput"><input type="number" name="" max="10" class="sub12" onblur="calcTotal('sub12', 'total12', 'grade12')"></td>
+		<td class="numberInput"><input type="number" name="" max="70" class="sub12" onblur="calcTotal('sub12', 'total12', 'grade12')"></td>
+		<td class="totalScore"><input type="number" name="" disabled class="totalScore" id="total12"></td>
+		<td><input type="text" name="" disabled value="F" id="grade12"></td>
+		<td><input class="justified" type="text" name=""></td>
+	</tr>
+	<tr>
+		<td class="justified">Marketing</td>
+		<td class="numberInput"><input type="number" name="" max="10" class="sub13" onblur="calcTotal('sub13', 'total13', 'grade13')"></td>
+		<td class="numberInput"><input type="number" name="" max="10" class="sub13" onblur="calcTotal('sub13', 'total13', 'grade13')"></td>
+		<td class="numberInput"><input type="number" name="" max="10" class="sub13" onblur="calcTotal('sub13', 'total13', 'grade13')"></td>
+		<td class="numberInput"><input type="number" name="" max="70" class="sub13" onblur="calcTotal('sub13', 'total13', 'grade13')"></td>
+		<td class="totalScore"><input type="number" name="" disabled class="totalScore" id="total13"></td>
+		<td><input type="text" name="" disabled value="F" id="grade13"></td>
+		<td><input class="justified" type="text" name=""></td>
+	</tr>
+	<tr>
+		<td class="justified">Further Maths</td>
+		<td class="numberInput"><input type="number" name="" max="10" class="sub14" onblur="calcTotal('sub14', 'total14', 'grade14')"></td>
+		<td class="numberInput"><input type="number" name="" max="10" class="sub14" onblur="calcTotal('sub14', 'total14', 'grade14')"></td>
+		<td class="numberInput"><input type="number" name="" max="10" class="sub14" onblur="calcTotal('sub14', 'total14', 'grade14')"></td>
+		<td class="numberInput"><input type="number" name="" max="70" class="sub14" onblur="calcTotal('sub14', 'total14', 'grade14')"></td>
+		<td class="totalScore"><input type="number" name="" disabled class="totalScore" id="total14"></td>
+		<td><input type="text" name="" disabled value="F" id="grade14"></td>
+		<td><input class="justified" type="text" name=""></td>
+	</tr>
+	<tr>
+		<td class="justified">Igbo Language</td>
+		<td class="numberInput"><input type="number" name="" max="10" class="sub15" onblur="calcTotal('sub15', 'total15', 'grade15')"></td>
+		<td class="numberInput"><input type="number" name="" max="10" class="sub15" onblur="calcTotal('sub15', 'total15', 'grade15')"></td>
+		<td class="numberInput"><input type="number" name="" max="10" class="sub15" onblur="calcTotal('sub15', 'total15', 'grade15')"></td>
+		<td class="numberInput"><input type="number" name="" max="70" class="sub15" onblur="calcTotal('sub15', 'total15', 'grade15')"></td>
+		<td class="totalScore"><input type="number" name="" disabled class="totalScore" id="total15"></td>
+		<td><input type="text" name="" disabled value="F" id="grade15"></td>
+		<td><input class="justified" type="text" name="" required=""></td>
+	</tr>
+</table>
+
+
+
+
+
+
+
+
+
+<table>
+<tr>
+		<td class="justified">GRADING SCALE</td>
+		<td class="justified">80-100 = A (Excellent)</td>
+		<td class="justified">70-79 = B (Very Good)</td>
+		<td class="justified">60-69 = C (Good)</td>
+		<td class="justified">50-59 = D (Credit)</td>
+		<td class="justified">40-49 = E (Fair)</td>
+		<td class="justified">0-39 = F (Fail)</td>
+	</tr>
+</table>
+</div>
+
+
+
+
+
+
+
+
+<div class="resultSum">
+	<table>
+		<tr>
+			<td>Total : </td>
+			<td><input type="number" class="totalScore" id="total" disabled></td>
+			<td>Average : </td>
+			<td><input type="text" name="" id="average" disabled></td>
+			<td>No. of Students : </td>
+			<td><input type="text" name="" disabled></td>
+			<td>Position : </td>
+			<td><input type="text" name="" id="position" disabled></td>
+		</tr>
+	</table>
+
+
+
+
+	<table>
+		<tr>
+			<td>Class Teacher's Comment : </td>
+			<td><textarea></textarea></td>
+			<td style="border:none; width: 4em; vertical-align: bottom;">Date : </td>
+			<td style="border:none; border-bottom: 1px solid #000; width: 8em;"><input type="date" name=""></td>
+		</tr>
+	</table>
+
+
+
+		<table> 
+			<tr> 
+				<td style="border: none; width: 4em; vertical-align: bottom;">Principal's Comment : </td> 
+				<td style="border:none; border-bottom: 1px solid #000; width: 20em;"><input type="text" name="" style="text-align: justify; padding-left: 5px;"></td>
+				<td style="border:none; width: 3em; vertical-align: bottom;">Signature : </td> 
+				<td style="border:none; width: 3em;"><img src=""></td> 
+				<td style="border:none; width: 3em; vertical-align: bottom;">Date : </td> 
+				<td style="border:none; border-bottom: 1px solid #000; width: 5em;"><input type="date" name=""></td> 
+			</tr>
+</table> 
+</div>
+
+
+
+
+<input type="submit" name="">
+
+
+</form>
+</div>
+</body>
+</html> 
